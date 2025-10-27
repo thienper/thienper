@@ -134,16 +134,13 @@
 <!-- https://icons8.com -->
 <div align="center">
   
-  <a href="https://www.facebook.com/hai.quan.580161/" target="blank">
+  <a href="https://www.facebook.com/thienperr" target="blank">
     <img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" alt="haiquan-facebook" />
   </a>
-  <a href="https://www.linkedin.com/in/h%E1%BA%A3i-qu%C3%A2n-8a26b3288/" target="blank">
-    <img src="https://img.icons8.com/bubbles/100/000000/linkedin.png" alt="haiquan-linkedin" />
-  </a>
-  <a href="https://www.instagram.com/vel.nos_/" target="blank">
+  <a href="https://www.instagram.com/chithien.1610/" target="blank">
     <img src="https://img.icons8.com/bubbles/100/000000/instagram.png" alt="haiquan-instagram" />
   </a>
-  <a href="mailto:maithanhhaiquan2004@gmail.com" target="top">
+  <a href="mailto:nghiemchithien471@gmail.com" target="top">
     <img src="https://img.icons8.com/bubbles/100/000000/apple-mail.png" alt="haiquan-email" />
   </a>
 </div>
@@ -153,24 +150,13 @@
 <h2 align="center">🚀 My Featured Projects 🚀</h2>
 <br>
 <div align="center">
-  <a href="https://github.com/haiquan/REPO_NAME_1" title="Project Name 1">
+  <a href="https://github.com/thienper/Image_Gallery" title="Project Name 1">
     <img width="400" src="https://github-readme-stats.vercel.app/api/pin/?username=haiquan&repo=REPO_NAME_1&theme=react&border_color=61dafb&hide_border=true&rank_icon=github" />
   </a>
   &nbsp; &nbsp; &nbsp;
-  <a href="https://github.com/haiquan/REPO_NAME_2" title="Project Name 2">
+  <a href="https://github.com/thienper/NodeJS_Project" title="Project Name 2">
     <img width="400" src="https://github-readme-stats.vercel.app/api/pin/?username=haiquan&repo=REPO_NAME_2&theme=react&border_color=61dafb&hide_border=true&rank_icon=github" />
   </a>
 </div>
 <br>
-
-<h2 align="center">🔥 GitHub Stats 🔥</h2>
-<br>
-<div align=center>
-  <a href="https://github.com/mthq2004" title="mthq2004">
-    <img width="315" align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mthq2004&hide=c%23,powershell,Mathematica,Ruby,Objective-C,Objective-C%2b%2b,Cuda&title_color=61dafb&text_color=ffffff&icon_color=61dafb&bg_color=20232a&langs_count=8&layout=compact&border_color=61dafb&hide_border=true" />
-  </a>
-  <a href="https://github.com/mthq2004" title="mthq2004">
-    <img align="right" width="434" src="https://github-readme-stats.vercel.app/api?username=mthq2004&show_icons=true&theme=react&border_color=61dafb&hide_border=true&rank_icon=github&include_all_commits=true" />
-  </a>
-</div>
 <br>
