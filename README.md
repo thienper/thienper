@@ -1,6 +1,6 @@
 <!-- HaiQuan dev -->
 <a href="#" target="_blank">
-  <img src="svg/haiquandev.svg" width="1200" alt="trungquandev-official" />
+  <img src="svg/thienper.svg" width="1200" alt="trungquandev-official" />
 </a>
 
 <h2 align="center">🛠 Technologies and Tools 🛠</h2>
