@@ -127,20 +127,4 @@
  </tr>
 </table>
 
-
-
-<br>
-
-<h2 align="center">🚀 My Featured Projects 🚀</h2>
-<br>
-<div align="center">
-  <a href="https://github.com/thienper/Image_Gallery" title="Project Name 1">
-    <img width="400" src="https://github-readme-stats.vercel.app/api/pin/?username=haiquan&repo=REPO_NAME_1&theme=react&border_color=61dafb&hide_border=true&rank_icon=github" />
-  </a>
-  &nbsp; &nbsp; &nbsp;
-  <a href="https://github.com/thienper/NodeJS_Project" title="Project Name 2">
-    <img width="400" src="https://github-readme-stats.vercel.app/api/pin/?username=haiquan&repo=REPO_NAME_2&theme=react&border_color=61dafb&hide_border=true&rank_icon=github" />
-  </a>
-</div>
-<br>
 <br>
