@@ -1,140 +1,377 @@
-<svg width="1200" height="750" viewBox="0 0 1200 750" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
-  aria-label="THIENPER fullstack developer banner">
+<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ThienPer — Fullstack Developer Creative Banner">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="750" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#051427" />
-      <stop offset="0.55" stop-color="#07203A" />
-      <stop offset="1" stop-color="#0A1422" />
+    <style>
+      .display-bold {
+        font-family: 'Inter', 'Helvetica Neue', 'Segoe UI', Arial, sans-serif;
+        font-weight: 800;
+      }
+      .display-italic {
+        font-family: 'Inter', 'Helvetica Neue', 'Segoe UI', Arial, sans-serif;
+        font-weight: 300;
+        font-style: italic;
+      }
+      .pill-text {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-weight: 600;
+      }
+      .mono-tag {
+        font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+        font-weight: 600;
+      }
+
+      @keyframes floatSphereA {
+        0%, 100% { transform: translate(0px, 0px) rotate(0deg); }
+        50% { transform: translate(4px, -9px) rotate(3deg); }
+      }
+      @keyframes floatSphereB {
+        0%, 100% { transform: translate(0px, 0px) rotate(0deg); }
+        50% { transform: translate(-5px, -11px) rotate(-4deg); }
+      }
+      @keyframes floatSphereC {
+        0%, 100% { transform: translateY(0px) scale(1); }
+        50% { transform: translateY(-6px) scale(1.04); }
+      }
+      @keyframes floatPill1 {
+        0%, 100% { transform: translateY(0px) rotate(-6deg); }
+        50% { transform: translateY(-5px) rotate(-4.5deg); }
+      }
+      @keyframes floatPill2 {
+        0%, 100% { transform: translateY(0px) rotate(2deg); }
+        50% { transform: translateY(-6px) rotate(3.5deg); }
+      }
+      @keyframes floatPill3 {
+        0%, 100% { transform: translateY(0px) rotate(-4deg); }
+        50% { transform: translateY(-5px) rotate(-2deg); }
+      }
+      @keyframes floatPill4 {
+        0%, 100% { transform: translateY(0px) rotate(1.5deg); }
+        50% { transform: translateY(-6px) rotate(0deg); }
+      }
+      @keyframes floatPill5 {
+        0%, 100% { transform: translateY(0px) rotate(-7deg); }
+        50% { transform: translateY(-5px) rotate(-5deg); }
+      }
+      @keyframes spinPinwheel {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes breatheLeak {
+        0%, 100% { opacity: 0.85; transform: scale(1); }
+        50% { opacity: 1; transform: scale(1.06); }
+      }
+      @keyframes pulseSelect {
+        0%, 100% { transform: translate(0px, 0px) rotate(-8deg) scale(1); opacity: 0.88; }
+        50% { transform: translate(2px, -4px) rotate(-5deg) scale(1.05); opacity: 1; }
+      }
+
+      .sphere-a { animation: floatSphereA 7s ease-in-out infinite; transform-origin: 356px 244px; }
+      .sphere-b { animation: floatSphereB 8s ease-in-out infinite; transform-origin: 912px 418px; }
+      .sphere-c { animation: floatSphereC 5.5s ease-in-out infinite; transform-origin: 650px 579px; }
+
+      .pill-1 { animation: floatPill1 6s ease-in-out infinite; transform-origin: 230px 408px; }
+      .pill-2 { animation: floatPill2 6.8s ease-in-out infinite; transform-origin: 555px 395px; }
+      .pill-3 { animation: floatPill3 7.2s ease-in-out infinite; transform-origin: 806px 402px; }
+      .pill-4 { animation: floatPill4 6.4s ease-in-out infinite; transform-origin: 945px 506px; }
+      .pill-5 { animation: floatPill5 7.5s ease-in-out infinite; transform-origin: 162px 236px; }
+
+      .pinwheel { animation: spinPinwheel 18s linear infinite; transform-origin: 242px 496px; }
+      .light-leak { animation: breatheLeak 9s ease-in-out infinite; transform-origin: 950px 80px; }
+      .select-box { animation: pulseSelect 6.5s ease-in-out infinite; transform-origin: 128px 436px; }
+    </style>
+
+    <!-- 1. Background & Film Light Leaks -->
+    <linearGradient id="bgDark" x1="0" y1="0" x2="1200" y2="700" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#121411" />
+      <stop offset="50%" stop-color="#171815" />
+      <stop offset="100%" stop-color="#0D0E0C" />
     </linearGradient>
-    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-      gradientTransform="translate(190 110) rotate(24) scale(500 240)">
-      <stop stop-color="#2AD8FF" stop-opacity="0.6" />
-      <stop offset="1" stop-color="#2AD8FF" stop-opacity="0" />
+
+    <!-- Top-Right Warm Sunset Light Leak -->
+    <radialGradient id="sunsetLeak" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(940 -20) rotate(132) scale(520 340)">
+      <stop offset="0%" stop-color="#FF5E1A" stop-opacity="0.72" />
+      <stop offset="35%" stop-color="#D92638" stop-opacity="0.38" />
+      <stop offset="68%" stop-color="#7C2D12" stop-opacity="0.14" />
+      <stop offset="100%" stop-color="#171815" stop-opacity="0" />
     </radialGradient>
-    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
-      gradientTransform="translate(1030 610) rotate(180) scale(450 240)">
-      <stop stop-color="#49F7A3" stop-opacity="0.38" />
-      <stop offset="1" stop-color="#49F7A3" stop-opacity="0" />
+
+    <!-- Bottom-Right Soft Silver Mist -->
+    <radialGradient id="silverLeak" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1220 650) rotate(-140) scale(360 280)">
+      <stop offset="0%" stop-color="#F5F5F4" stop-opacity="0.45" />
+      <stop offset="50%" stop-color="#A8A29E" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#0D0E0C" stop-opacity="0" />
     </radialGradient>
-    <linearGradient id="title" x1="118" y1="228" x2="700" y2="282" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#9EF6FF" />
-      <stop offset="0.5" stop-color="#5FE3FF" />
-      <stop offset="1" stop-color="#89FFD8" />
+
+    <!-- Center Warm-Mint Ambient Glow Behind Typography -->
+    <radialGradient id="centerAmbient" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(560 410) scale(460 230)">
+      <stop offset="0%" stop-color="#6EE7B7" stop-opacity="0.12" />
+      <stop offset="55%" stop-color="#FDE68A" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#171815" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- 2. Pearlescent Typography Gradients -->
+    <linearGradient id="typePearlTop" x1="120" y1="260" x2="820" y2="375" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FCE7F3" />
+      <stop offset="28%" stop-color="#F8FAFC" />
+      <stop offset="65%" stop-color="#ECFDF5" />
+      <stop offset="100%" stop-color="#FEFCE8" />
     </linearGradient>
-    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0" />
-      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.22" />
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0" />
+
+    <linearGradient id="typePearlBottom" x1="290" y1="430" x2="890" y2="540" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="35%" stop-color="#E6F8F3" />
+      <stop offset="72%" stop-color="#B9F5E3" />
+      <stop offset="100%" stop-color="#E2F7D6" />
     </linearGradient>
-    <filter id="blur" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
-      <feGaussianBlur stdDeviation="30" />
+
+    <!-- 3. 3D Prismatic Chromatic Sphere Gradients (Translucent Smoky Shadow Side + Vibrant Spectrum Rim) -->
+    <!-- Sphere A (Top-Left, overlaps "Th"): Smoky translucent bottom-left so letter faintly shows through, rainbow top-right -->
+    <linearGradient id="prismSphereA" x1="312" y1="288" x2="402" y2="198" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#111215" stop-opacity="0.84" />
+      <stop offset="30%" stop-color="#181920" stop-opacity="0.9" />
+      <stop offset="46%" stop-color="#2563EB" stop-opacity="0.95" />
+      <stop offset="58%" stop-color="#38BDF8" />
+      <stop offset="68%" stop-color="#4ADE80" />
+      <stop offset="78%" stop-color="#FACC15" />
+      <stop offset="88%" stop-color="#F97316" />
+      <stop offset="96%" stop-color="#E11D48" />
+      <stop offset="100%" stop-color="#4C0519" />
+    </linearGradient>
+
+    <!-- Sphere B (Right): Chrome-Cyan -> White -> Dark Charcoal Band -> Yellow-Gold -> Fiery Red -->
+    <linearGradient id="prismSphereB" x1="882" y1="362" x2="942" y2="474" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="16%" stop-color="#38BDF8" />
+      <stop offset="28%" stop-color="#FFFFFF" />
+      <stop offset="44%" stop-color="#27272A" stop-opacity="0.92" />
+      <stop offset="58%" stop-color="#FACC15" />
+      <stop offset="76%" stop-color="#FF5500" />
+      <stop offset="92%" stop-color="#E11D48" />
+      <stop offset="100%" stop-color="#881337" />
+    </linearGradient>
+
+    <!-- Sphere C (Bottom Mini Orb): Warm Gold -> Cream -> Soft Sky -->
+    <linearGradient id="prismSphereC" x1="630" y1="568" x2="670" y2="592" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="45%" stop-color="#FDE68A" />
+      <stop offset="80%" stop-color="#FFFBEB" />
+      <stop offset="100%" stop-color="#BAE6FD" />
+    </linearGradient>
+
+    <!-- Specular 3D Highlight for Spheres -->
+    <radialGradient id="sphereHighlight" cx="35%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.28" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.04" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.35" />
+    </radialGradient>
+
+    <!-- Pinwheel Petal Gradient -->
+    <linearGradient id="petalGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFBEB" />
+      <stop offset="60%" stop-color="#FDE68A" />
+      <stop offset="100%" stop-color="#78350F" stop-opacity="0.4" />
+    </linearGradient>
+
+    <!-- 4. Cast Shadows & Subtle Grain Filter -->
+    <filter id="deepShadow" x="-30%" y="-30%" width="160%" height="160%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="-8" dy="14" stdDeviation="12" flood-color="#000000" flood-opacity="0.72" />
     </filter>
-    <filter id="shadow" x="0" y="0" width="1200" height="750" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#020A14" flood-opacity="0.7" />
+
+    <filter id="pillShadow" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#050605" flood-opacity="0.65" />
     </filter>
-    <filter id="titleGlow" x="0" y="0" width="1200" height="750" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="0" stdDeviation="9" flood-color="#47E6FF" flood-opacity="0.4" />
+
+    <filter id="typeShadow" x="-10%" y="-10%" width="120%" height="130%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#050605" flood-opacity="0.55" />
     </filter>
-  </defs>
 
-  <rect width="1200" height="750" fill="url(#bg)" />
+    <filter id="filmGrain" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch" result="noise" />
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.045 0" in="noise" result="coloredNoise" />
+      <feComposite operator="in" in2="SourceGraphic" />
+    </filter>
 
-  <g>
-    <rect width="1200" height="750" fill="url(#glowA)">
-      <animate attributeName="opacity" values="0.72;0.5;0.72" dur="6s" repeatCount="indefinite" />
-    </rect>
-    <rect width="1200" height="750" fill="url(#glowB)">
-      <animate attributeName="opacity" values="0.5;0.75;0.5" dur="6.5s" repeatCount="indefinite" />
-    </rect>
-  </g>
+    <!-- Diagonal Stripe Clip for Top Brand Mark -->
+    <clipPath id="brandBoxClip">
+      <rect x="652" y="88" width="66" height="66" rx="3" />
+    </clipPath>
 
-  <g opacity="0.12" stroke="#78DDFF" stroke-width="1">
-    <path d="M38 672L460 250" />
-    <path d="M124 714L544 294" />
-    <path d="M746 126L1162 542" />
-    <path d="M638 66L1048 476" />
-  </g>
-
-  <circle cx="212" cy="138" r="72" fill="#2EE3FF" opacity="0.22" filter="url(#blur)">
-    <animate attributeName="r" values="64;76;64" dur="7s" repeatCount="indefinite" />
-  </circle>
-  <circle cx="1010" cy="602" r="88" fill="#3BFFB9" opacity="0.16" filter="url(#blur)">
-    <animate attributeName="opacity" values="0.12;0.24;0.12" dur="5.5s" repeatCount="indefinite" />
-  </circle>
-
-  <g filter="url(#shadow)">
-    <rect x="62" y="92" width="1076" height="566" rx="34" fill="#061A2D" fill-opacity="0.68" stroke="#5CDEFF"
-      stroke-opacity="0.25" />
-  </g>
-
-  <g clip-path="url(#clipMain)">
-    <rect x="-260" y="92" width="260" height="566" fill="url(#shine)" transform="skewX(-20)">
-      <animate attributeName="x" values="-280;1280" dur="3.8s" repeatCount="indefinite" />
-    </rect>
-  </g>
-
-  <defs>
-    <clipPath id="clipMain">
-      <rect x="62" y="92" width="1076" height="566" rx="34" />
+    <clipPath id="canvasClip">
+      <rect width="1200" height="700" rx="24" />
     </clipPath>
   </defs>
 
-  <rect x="102" y="144" width="8" height="424" rx="4" fill="#44FFCD" opacity="0.9">
-    <animate attributeName="opacity" values="0.55;1;0.55" dur="2.4s" repeatCount="indefinite" />
-  </rect>
+  <g clip-path="url(#canvasClip)">
+    <!-- ================= 1. MATTE CHARCOAL CANVAS & LIGHT LEAKS ================= -->
+    <rect width="1200" height="700" fill="url(#bgDark)" />
+    <rect width="1200" height="700" fill="url(#centerAmbient)" />
+    <rect width="1200" height="700" fill="url(#sunsetLeak)" class="light-leak" />
+    <rect width="1200" height="700" fill="url(#silverLeak)" />
 
-  <text x="132" y="206" fill="#90E2F7" font-family="Segoe UI, Verdana, sans-serif" font-size="24"
-    letter-spacing="6">HELLO, I AM</text>
+    <!-- ================= 2. TOP BRAND EMBLEM (tper .dev + Diagonal Stripes Block) ================= -->
+    <g transform="translate(0, 4)">
+      <!-- "tper" has 'p' descender in the middle and '.dev' tucked cleanly under 'er' on the right (just like rgb.vn) -->
+      <text x="642" y="132" fill="#F5F5F4" class="display-bold" font-size="60" letter-spacing="-3" text-anchor="end">tper</text>
+      <text x="641" y="153" fill="#E7E5E4" class="pill-text" font-size="18" letter-spacing="0.5" text-anchor="end">.dev</text>
 
-  <g filter="url(#titleGlow)">
-    <text x="132" y="312" fill="url(#title)" font-family="Trebuchet MS, Segoe UI, Verdana, sans-serif" font-size="102"
-      font-weight="700" letter-spacing="2">THIENPER</text>
+      <!-- Diagonal Stripes Block + Warm Orange Corner Triangle -->
+      <g clip-path="url(#brandBoxClip)">
+        <g stroke="#F5F5F4" stroke-width="8" stroke-linecap="square">
+          <line x1="636" y1="128" x2="682" y2="174" />
+          <line x1="636" y1="106" x2="704" y2="174" />
+          <line x1="636" y1="84" x2="726" y2="174" />
+          <line x1="658" y1="84" x2="726" y2="152" />
+          <line x1="680" y1="84" x2="726" y2="130" />
+        </g>
+        <!-- Warm Orange Top-Right Triangle -->
+        <polygon points="688,88 718,88 718,118" fill="#F97316" />
+      </g>
+    </g>
+
+    <!-- ================= 3. GIANT EDITORIAL DISPLAY TYPOGRAPHY ================= -->
+    <!-- Line 1: "Thien" (Bold) + "Per" (Sleek Light Italic) -->
+    <g filter="url(#typeShadow)">
+      <text x="600" y="348" text-anchor="middle" font-size="168" letter-spacing="-6">
+        <tspan fill="url(#typePearlTop)" class="display-bold">Thien</tspan><tspan fill="#FFFFFF" class="display-italic" letter-spacing="-4">Per</tspan>
+      </text>
+    </g>
+
+    <!-- Micro Cursor Arrow Accent near the center of Line 1 -->
+    <path d="M538 252 L552 246 L547 260 L544 254 L539 259" fill="#E2F7D6" stroke="#E2F7D6" stroke-width="1.5" stroke-linejoin="round" />
+
+    <!-- Line 2: "fullstack" (Pearlescent Mint-Ivory Display Typography) -->
+    <g filter="url(#typeShadow)">
+      <text x="568" y="514" fill="url(#typePearlBottom)" class="display-bold" font-size="146" letter-spacing="-5.5" text-anchor="middle">
+        fullstack
+      </text>
+    </g>
+
+    <!-- ================= 4. FOREGROUND 3D PRISMATIC SPHERES (Overlapping Typography like reference) ================= -->
+
+    <!-- Sphere A (Top-Left, overlapping "Th" with translucent smoky shadow & rainbow rim) -->
+    <g class="sphere-a">
+      <!-- Crossed Craft Icon perched on upper-left rim of Sphere A -->
+      <g transform="translate(292, 188) rotate(-45)" stroke="#D6D3D1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.88">
+        <rect x="-3" y="-15" width="6" height="30" rx="1" fill="none" />
+        <path d="M-3 -9 H3 M-3 9 H3" />
+        <path d="M-15 -3 H15 L20 0 L15 3 H-15 Z" fill="#171815" />
+      </g>
+
+      <g filter="url(#deepShadow)">
+        <circle cx="356" cy="244" r="62" fill="url(#prismSphereA)" />
+        <circle cx="356" cy="244" r="62" fill="url(#sphereHighlight)" />
+      </g>
+    </g>
+
+    <!-- Sphere B (Center-Right, overlapping right side of typography) -->
+    <g class="sphere-b">
+      <g filter="url(#deepShadow)">
+        <circle cx="912" cy="418" r="66" fill="url(#prismSphereB)" />
+        <circle cx="912" cy="418" r="66" fill="url(#sphereHighlight)" />
+      </g>
+    </g>
+
+    <!-- ================= 5. FLOATING TILTED TECH-STACK PILLS ================= -->
+
+    <!-- Pill 1: Node.js (Left, tilted -6deg, cleanly separated from selection box) -->
+    <g class="pill-1" filter="url(#pillShadow)">
+      <rect x="166" y="388" width="132" height="42" rx="21" fill="#181A17" fill-opacity="0.84" stroke="#D6D3D1" stroke-width="1.5" />
+      <text x="232" y="415" fill="#F5F5F4" class="pill-text" font-size="21" text-anchor="middle" letter-spacing="-0.3">Node.js</text>
+    </g>
+
+    <!-- Pill 2: React • Next.js (Center-Middle, nestled between lines) -->
+    <g class="pill-2" filter="url(#pillShadow)">
+      <rect x="444" y="374" width="222" height="44" rx="22" fill="#181A17" fill-opacity="0.86" stroke="#D6D3D1" stroke-width="1.5" />
+      <text x="555" y="402" fill="#F5F5F4" class="pill-text" font-size="21" text-anchor="middle" letter-spacing="-0.3">React • Next.js</text>
+    </g>
+
+    <!-- Pill 3: Spring Boot (Center-Right, overlapping left of Sphere B) -->
+    <g class="pill-3" filter="url(#pillShadow)">
+      <rect x="722" y="380" width="168" height="44" rx="22" fill="#181A17" fill-opacity="0.86" stroke="#D6D3D1" stroke-width="1.5" />
+      <text x="806" y="408" fill="#F5F5F4" class="pill-text" font-size="21" text-anchor="middle" letter-spacing="-0.3">Spring Boot</text>
+    </g>
+
+    <!-- Pill 4: CI/CD • Docker (Bottom-Right, below Sphere B) -->
+    <g class="pill-4" filter="url(#pillShadow)">
+      <rect x="846" y="484" width="198" height="44" rx="22" fill="#181A17" fill-opacity="0.88" stroke="#D6D3D1" stroke-width="1.5" />
+      <text x="945" y="512" fill="#F5F5F4" class="pill-text" font-size="21" text-anchor="middle" letter-spacing="-0.3">CI/CD • Docker</text>
+    </g>
+
+    <!-- Pill 5: HTML • CSS (Top-Left accent pill, cleanly separated from crossed icon) -->
+    <g class="pill-5" filter="url(#pillShadow)">
+      <rect x="90" y="216" width="144" height="38" rx="19" fill="#181A17" fill-opacity="0.82" stroke="#A8A29E" stroke-width="1.3" />
+      <text x="162" y="240" fill="#E7E5E4" class="pill-text" font-size="18" text-anchor="middle" letter-spacing="-0.2">HTML • CSS</text>
+    </g>
+
+    <!-- ================= 6. DESIGNER VECTOR ACCENTS (Bounding Box Cursor & 3D Pinwheel) ================= -->
+
+    <!-- Bezier Transform Selection Box Icon (Cleanly to the left of Node.js pill) -->
+    <g class="select-box">
+      <rect x="112" y="420" width="32" height="32" stroke="#D6D3D1" stroke-width="1.4" fill="none" />
+      <!-- 4 Corner Anchor Handles -->
+      <rect x="109" y="417" width="6" height="6" fill="#171815" stroke="#D6D3D1" stroke-width="1.3" />
+      <rect x="141" y="417" width="6" height="6" fill="#171815" stroke="#D6D3D1" stroke-width="1.3" />
+      <rect x="109" y="449" width="6" height="6" fill="#171815" stroke="#D6D3D1" stroke-width="1.3" />
+      <rect x="141" y="449" width="6" height="6" fill="#171815" stroke="#D6D3D1" stroke-width="1.3" />
+      <!-- Inner Pointer Arrow -->
+      <path d="M122 429 L135 435 L129 438 L126 444 Z" fill="none" stroke="#F5F5F4" stroke-width="1.4" stroke-linejoin="round" />
+    </g>
+
+    <!-- 3D Kinetic Pinwheel / Starburst Rosette (Cleanly to the left of "fullstack") -->
+    <g class="pinwheel" filter="url(#pillShadow)">
+      <g transform="translate(242, 496)">
+        <path d="M0 0 C-4 -14, 4 -24, 10 -26 C6 -14, 4 -6, 0 0 Z" fill="url(#petalGrad)" />
+        <path d="M0 0 C-4 -14, 4 -24, 10 -26 C6 -14, 4 -6, 0 0 Z" fill="url(#petalGrad)" transform="rotate(22.5)" />
+        <path d="M0 0 C-4 -14, 4 -24, 10 -26 C6 -14, 4 -6, 0 0 Z" fill="url(#petalGrad)" transform="rotate(45)" />
+        <path d="M0 0 C-4 -14, 4 -24, 10 -26 C6 -14, 4 -6, 0 0 Z" fill="url(#petalGrad)" transform="rotate(67.5)" />
+        <path d="M0 0 C-4 -14, 4 -24, 10 -26 C6 -14, 4 -6, 0 0 Z" fill="url(#petalGrad)" transform="rotate(90)" />
+        <path d="M0 0 C-4 -14, 4 -24, 10 -26 C6 -14, 4 -6, 0 0 Z" fill="url(#petalGrad)" transform="rotate(112.5)" />
+        <path d="M0 0 C-4 -14, 4 -24, 10 -26 C6 -14, 4 -6, 0 0 Z" fill="url(#petalGrad)" transform="rotate(135)" />
+        <path d="M0 0 C-4 -14, 4 -24, 10 -26 C6 -14, 4 -6, 0 0 Z" fill="url(#petalGrad)" transform="rotate(157.5)" />
+        <path d="M0 0 C-4 -14, 4 -24, 10 -26 C6 -14, 4 -6, 0 0 Z" fill="url(#petalGrad)" transform="rotate(180)" />
+        <path d="M0 0 C-4 -14, 4 -24, 10 -26 C6 -14, 4 -6, 0 0 Z" fill="url(#petalGrad)" transform="rotate(202.5)" />
+        <path d="M0 0 C-4 -14, 4 -24, 10 -26 C6 -14, 4 -6, 0 0 Z" fill="url(#petalGrad)" transform="rotate(225)" />
+        <path d="M0 0 C-4 -14, 4 -24, 10 -26 C6 -14, 4 -6, 0 0 Z" fill="url(#petalGrad)" transform="rotate(247.5)" />
+        <path d="M0 0 C-4 -14, 4 -24, 10 -26 C6 -14, 4 -6, 0 0 Z" fill="url(#petalGrad)" transform="rotate(270)" />
+        <path d="M0 0 C-4 -14, 4 -24, 10 -26 C6 -14, 4 -6, 0 0 Z" fill="url(#petalGrad)" transform="rotate(292.5)" />
+        <path d="M0 0 C-4 -14, 4 -24, 10 -26 C6 -14, 4 -6, 0 0 Z" fill="url(#petalGrad)" transform="rotate(315)" />
+        <path d="M0 0 C-4 -14, 4 -24, 10 -26 C6 -14, 4 -6, 0 0 Z" fill="url(#petalGrad)" transform="rotate(337.5)" />
+      </g>
+    </g>
+
+    <!-- ================= 7. BOTTOM CAPSULE BAR & MINI GOLD SPHERE ================= -->
+    <g filter="url(#pillShadow)">
+      <rect x="332" y="556" width="286" height="46" rx="23" fill="#161815" fill-opacity="0.86" stroke="#A8A29E" stroke-width="1.4" />
+
+      <!-- 3 Mini Rounded-Square Icons (Code, Git, Terminal) -->
+      <g stroke="#D6D3D1" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <!-- Icon 1: Code -->
+        <rect x="360" y="569" width="20" height="20" rx="4" />
+        <path d="M368 576 L365 579 L368 582 M372 576 L375 579 L372 582" stroke-width="1.3" />
+
+        <!-- Icon 2: Git/CI -->
+        <rect x="387" y="569" width="20" height="20" rx="4" />
+        <circle cx="397" cy="579" r="3.5" stroke-width="1.3" />
+
+        <!-- Icon 3: Deploy Play -->
+        <rect x="414" y="569" width="20" height="20" rx="4" />
+        <polygon points="422,575 428,579 422,583" fill="#D6D3D1" stroke="none" />
+      </g>
+
+      <text x="448" y="586" fill="#F5F5F4" class="display-bold" font-size="24" letter-spacing="-0.5">thienper.dev</text>
+    </g>
+
+    <!-- Sphere C (Warm Gold Mini Orb right next to bottom capsule) -->
+    <g class="sphere-c" filter="url(#pillShadow)">
+      <circle cx="650" cy="579" r="22" fill="url(#prismSphereC)" />
+      <circle cx="650" cy="579" r="22" fill="url(#sphereHighlight)" />
+    </g>
+
+    <!-- Subtle Editorial Bottom Caption -->
+    <text x="600" y="654" fill="#78716C" class="mono-tag" font-size="11.5" letter-spacing="4" text-anchor="middle">
+      FULLSTACK ENGINEER  ·  FRONTEND  ·  BACKEND  ·  CI/CD AUTOMATION
+    </text>
+
+    <!-- Analog Film Grain Texture Overlay -->
+    <rect width="1200" height="700" fill="#FFFFFF" filter="url(#filmGrain)" opacity="0.55" />
   </g>
-
-  <text x="132" y="372" fill="#D4FAFF" font-family="Segoe UI, Verdana, sans-serif" font-size="42" font-weight="700"
-    letter-spacing="1">FULLSTACK DEVELOPER</text>
-  <text x="132" y="432" fill="#9BCBDD" font-family="Segoe UI, Verdana, sans-serif" font-size="25">Node.js - Next.js -
-    React - HTML - CSS - Spring Boot</text>
-
-  <g>
-    <rect x="132" y="482" width="314" height="58" rx="29" fill="#24DFFF" fill-opacity="0.14" stroke="#73EDFF" />
-    <text x="283" y="515" fill="#D8FCFF" font-family="Segoe UI, Verdana, sans-serif" font-size="24" font-weight="700"
-      letter-spacing="1" text-anchor="middle" dominant-baseline="middle">FULLSTACK READY</text>
-  </g>
-
-  <g opacity="0.95">
-    <g>
-      <rect x="822" y="156" width="270" height="58" rx="16" fill="#071426" stroke="#74E9FF" stroke-opacity="0.62" />
-      <text x="957" y="185" fill="#CBF8FF" font-family="Segoe UI, Verdana, sans-serif" font-size="24" font-weight="600"
-        text-anchor="middle" dominant-baseline="middle">Node.js</text>
-      <animate attributeName="opacity" values="0.85;1;0.85" dur="2.8s" begin="0s" repeatCount="indefinite" />
-    </g>
-    <g>
-      <rect x="822" y="232" width="270" height="58" rx="16" fill="#071426" stroke="#7BFFE6" stroke-opacity="0.62" />
-      <text x="957" y="261" fill="#D9FFF3" font-family="Segoe UI, Verdana, sans-serif" font-size="24" font-weight="600"
-        text-anchor="middle" dominant-baseline="middle">Next.js</text>
-      <animate attributeName="opacity" values="0.85;1;0.85" dur="2.8s" begin="0.35s" repeatCount="indefinite" />
-    </g>
-    <g>
-      <rect x="822" y="308" width="270" height="58" rx="16" fill="#071426" stroke="#7DE0FF" stroke-opacity="0.62" />
-      <text x="957" y="337" fill="#D8F8FF" font-family="Segoe UI, Verdana, sans-serif" font-size="24" font-weight="600"
-        text-anchor="middle" dominant-baseline="middle">React</text>
-      <animate attributeName="opacity" values="0.85;1;0.85" dur="2.8s" begin="0.7s" repeatCount="indefinite" />
-    </g>
-    <g>
-      <rect x="822" y="384" width="270" height="58" rx="16" fill="#071426" stroke="#8FFFD9" stroke-opacity="0.62" />
-      <text x="957" y="413" fill="#E0FFF5" font-family="Segoe UI, Verdana, sans-serif" font-size="24" font-weight="600"
-        text-anchor="middle" dominant-baseline="middle">HTML - CSS</text>
-      <animate attributeName="opacity" values="0.85;1;0.85" dur="2.8s" begin="1.05s" repeatCount="indefinite" />
-    </g>
-    <g>
-      <rect x="822" y="460" width="270" height="58" rx="16" fill="#071426" stroke="#89E8FF" stroke-opacity="0.62" />
-      <text x="957" y="489" fill="#DBF9FF" font-family="Segoe UI, Verdana, sans-serif" font-size="24" font-weight="600"
-        text-anchor="middle" dominant-baseline="middle">Spring Boot</text>
-      <animate attributeName="opacity" values="0.85;1;0.85" dur="2.8s" begin="1.4s" repeatCount="indefinite" />
-    </g>
-  </g>
-
-  <text x="132" y="610" fill="#76AEBF" font-family="Segoe UI, Verdana, sans-serif" font-size="20"
-    letter-spacing="3">THIENPER - FULLSTACK ENGINEER</text>
 </svg>
