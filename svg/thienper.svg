@@ -1,4 +1,4 @@
-<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ThienPer — Fullstack Developer Creative Banner">
+<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ThienPer — Fullstack Software Engineer Creative Banner">
   <defs>
     <style>
       .display-bold {
@@ -51,6 +51,10 @@
         0%, 100% { transform: translateY(0px) rotate(-7deg); }
         50% { transform: translateY(-5px) rotate(-5deg); }
       }
+      @keyframes floatPill6 {
+        0%, 100% { transform: translateY(0px) rotate(4.5deg); }
+        50% { transform: translateY(-6px) rotate(2.5deg); }
+      }
       @keyframes spinPinwheel {
         from { transform: rotate(0deg); }
         to { transform: rotate(360deg); }
@@ -66,13 +70,14 @@
 
       .sphere-a { animation: floatSphereA 7s ease-in-out infinite; transform-origin: 356px 244px; }
       .sphere-b { animation: floatSphereB 8s ease-in-out infinite; transform-origin: 912px 418px; }
-      .sphere-c { animation: floatSphereC 5.5s ease-in-out infinite; transform-origin: 650px 579px; }
+      .sphere-c { animation: floatSphereC 5.5s ease-in-out infinite; transform-origin: 696px 579px; }
 
       .pill-1 { animation: floatPill1 6s ease-in-out infinite; transform-origin: 230px 408px; }
       .pill-2 { animation: floatPill2 6.8s ease-in-out infinite; transform-origin: 555px 395px; }
       .pill-3 { animation: floatPill3 7.2s ease-in-out infinite; transform-origin: 806px 402px; }
       .pill-4 { animation: floatPill4 6.4s ease-in-out infinite; transform-origin: 945px 506px; }
       .pill-5 { animation: floatPill5 7.5s ease-in-out infinite; transform-origin: 162px 236px; }
+      .pill-6 { animation: floatPill6 6.9s ease-in-out infinite; transform-origin: 960px 218px; }
 
       .pinwheel { animation: spinPinwheel 18s linear infinite; transform-origin: 242px 496px; }
       .light-leak { animation: breatheLeak 9s ease-in-out infinite; transform-origin: 950px 80px; }
@@ -123,8 +128,7 @@
       <stop offset="100%" stop-color="#E2F7D6" />
     </linearGradient>
 
-    <!-- 3. 3D Prismatic Chromatic Sphere Gradients (Translucent Smoky Shadow Side + Vibrant Spectrum Rim) -->
-    <!-- Sphere A (Top-Left, overlaps "Th"): Smoky translucent bottom-left so letter faintly shows through, rainbow top-right -->
+    <!-- 3. 3D Prismatic Chromatic Sphere Gradients -->
     <linearGradient id="prismSphereA" x1="312" y1="288" x2="402" y2="198" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#111215" stop-opacity="0.84" />
       <stop offset="30%" stop-color="#181920" stop-opacity="0.9" />
@@ -137,7 +141,6 @@
       <stop offset="100%" stop-color="#4C0519" />
     </linearGradient>
 
-    <!-- Sphere B (Right): Chrome-Cyan -> White -> Dark Charcoal Band -> Yellow-Gold -> Fiery Red -->
     <linearGradient id="prismSphereB" x1="882" y1="362" x2="942" y2="474" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#0F172A" />
       <stop offset="16%" stop-color="#38BDF8" />
@@ -149,8 +152,7 @@
       <stop offset="100%" stop-color="#881337" />
     </linearGradient>
 
-    <!-- Sphere C (Bottom Mini Orb): Warm Gold -> Cream -> Soft Sky -->
-    <linearGradient id="prismSphereC" x1="630" y1="568" x2="670" y2="592" gradientUnits="userSpaceOnUse">
+    <linearGradient id="prismSphereC" x1="676" y1="568" x2="716" y2="592" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#F59E0B" />
       <stop offset="45%" stop-color="#FDE68A" />
       <stop offset="80%" stop-color="#FFFBEB" />
@@ -190,7 +192,7 @@
       <feComposite operator="in" in2="SourceGraphic" />
     </filter>
 
-    <!-- Diagonal Stripe Clip for Top Brand Mark -->
+    <!-- Diagonal Stripe Clip for Top Greeting Emblem -->
     <clipPath id="brandBoxClip">
       <rect x="652" y="88" width="66" height="66" rx="3" />
     </clipPath>
@@ -207,11 +209,10 @@
     <rect width="1200" height="700" fill="url(#sunsetLeak)" class="light-leak" />
     <rect width="1200" height="700" fill="url(#silverLeak)" />
 
-    <!-- ================= 2. TOP BRAND EMBLEM (tper .dev + Diagonal Stripes Block) ================= -->
+    <!-- ================= 2. TOP EDITORIAL GREETING LOCKUP ("hello / i am" + Diagonal Stripes Block) ================= -->
     <g transform="translate(0, 4)">
-      <!-- "tper" has 'p' descender in the middle and '.dev' tucked cleanly under 'er' on the right (just like rgb.vn) -->
-      <text x="642" y="132" fill="#F5F5F4" class="display-bold" font-size="60" letter-spacing="-3" text-anchor="end">tper</text>
-      <text x="641" y="153" fill="#E7E5E4" class="pill-text" font-size="18" letter-spacing="0.5" text-anchor="end">.dev</text>
+      <text x="640" y="132" fill="#F5F5F4" class="display-bold" font-size="56" letter-spacing="-2.5" text-anchor="end">hello</text>
+      <text x="639" y="153" fill="#D6D3D1" class="pill-text" font-size="16" letter-spacing="1.5" text-anchor="end">I AM</text>
 
       <!-- Diagonal Stripes Block + Warm Orange Corner Triangle -->
       <g clip-path="url(#brandBoxClip)">
@@ -245,7 +246,7 @@
       </text>
     </g>
 
-    <!-- ================= 4. FOREGROUND 3D PRISMATIC SPHERES (Overlapping Typography like reference) ================= -->
+    <!-- ================= 4. FOREGROUND 3D PRISMATIC SPHERES ================= -->
 
     <!-- Sphere A (Top-Left, overlapping "Th" with translucent smoky shadow & rainbow rim) -->
     <g class="sphere-a">
@@ -272,7 +273,7 @@
 
     <!-- ================= 5. FLOATING TILTED TECH-STACK PILLS ================= -->
 
-    <!-- Pill 1: Node.js (Left, tilted -6deg, cleanly separated from selection box) -->
+    <!-- Pill 1: Node.js (Left, tilted -6deg) -->
     <g class="pill-1" filter="url(#pillShadow)">
       <rect x="166" y="388" width="132" height="42" rx="21" fill="#181A17" fill-opacity="0.84" stroke="#D6D3D1" stroke-width="1.5" />
       <text x="232" y="415" fill="#F5F5F4" class="pill-text" font-size="21" text-anchor="middle" letter-spacing="-0.3">Node.js</text>
@@ -296,15 +297,21 @@
       <text x="945" y="512" fill="#F5F5F4" class="pill-text" font-size="21" text-anchor="middle" letter-spacing="-0.3">CI/CD • Docker</text>
     </g>
 
-    <!-- Pill 5: HTML • CSS (Top-Left accent pill, cleanly separated from crossed icon) -->
+    <!-- Pill 5: HTML • CSS (Top-Left accent pill) -->
     <g class="pill-5" filter="url(#pillShadow)">
       <rect x="90" y="216" width="144" height="38" rx="19" fill="#181A17" fill-opacity="0.82" stroke="#A8A29E" stroke-width="1.3" />
       <text x="162" y="240" fill="#E7E5E4" class="pill-text" font-size="18" text-anchor="middle" letter-spacing="-0.2">HTML • CSS</text>
     </g>
 
+    <!-- Pill 6: PostgreSQL • Redis (Top-Right accent pill) -->
+    <g class="pill-6" filter="url(#pillShadow)">
+      <rect x="864" y="198" width="192" height="38" rx="19" fill="#181A17" fill-opacity="0.82" stroke="#A8A29E" stroke-width="1.3" />
+      <text x="960" y="222" fill="#E7E5E4" class="pill-text" font-size="17.5" text-anchor="middle" letter-spacing="-0.2">PostgreSQL • Redis</text>
+    </g>
+
     <!-- ================= 6. DESIGNER VECTOR ACCENTS (Bounding Box Cursor & 3D Pinwheel) ================= -->
 
-    <!-- Bezier Transform Selection Box Icon (Cleanly to the left of Node.js pill) -->
+    <!-- Bezier Transform Selection Box Icon -->
     <g class="select-box">
       <rect x="112" y="420" width="32" height="32" stroke="#D6D3D1" stroke-width="1.4" fill="none" />
       <!-- 4 Corner Anchor Handles -->
@@ -316,7 +323,7 @@
       <path d="M122 429 L135 435 L129 438 L126 444 Z" fill="none" stroke="#F5F5F4" stroke-width="1.4" stroke-linejoin="round" />
     </g>
 
-    <!-- 3D Kinetic Pinwheel / Starburst Rosette (Cleanly to the left of "fullstack") -->
+    <!-- 3D Kinetic Pinwheel / Starburst Rosette -->
     <g class="pinwheel" filter="url(#pillShadow)">
       <g transform="translate(242, 496)">
         <path d="M0 0 C-4 -14, 4 -24, 10 -26 C6 -14, 4 -6, 0 0 Z" fill="url(#petalGrad)" />
@@ -338,37 +345,37 @@
       </g>
     </g>
 
-    <!-- ================= 7. BOTTOM CAPSULE BAR & MINI GOLD SPHERE ================= -->
+    <!-- ================= 7. BOTTOM ROLE CAPSULE BAR & MINI GOLD SPHERE ================= -->
     <g filter="url(#pillShadow)">
-      <rect x="332" y="556" width="286" height="46" rx="23" fill="#161815" fill-opacity="0.86" stroke="#A8A29E" stroke-width="1.4" />
+      <rect x="292" y="556" width="368" height="46" rx="23" fill="#161815" fill-opacity="0.86" stroke="#A8A29E" stroke-width="1.4" />
 
-      <!-- 3 Mini Rounded-Square Icons (Code, Git, Terminal) -->
+      <!-- 3 Mini Rounded-Square Icons (Frontend Code, Backend Server, CI/CD Deploy) -->
       <g stroke="#D6D3D1" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <!-- Icon 1: Code -->
-        <rect x="360" y="569" width="20" height="20" rx="4" />
-        <path d="M368 576 L365 579 L368 582 M372 576 L375 579 L372 582" stroke-width="1.3" />
+        <rect x="318" y="569" width="20" height="20" rx="4" />
+        <path d="M326 576 L323 579 L326 582 M330 576 L333 579 L330 582" stroke-width="1.3" />
 
-        <!-- Icon 2: Git/CI -->
-        <rect x="387" y="569" width="20" height="20" rx="4" />
-        <circle cx="397" cy="579" r="3.5" stroke-width="1.3" />
+        <!-- Icon 2: Backend / Database -->
+        <rect x="345" y="569" width="20" height="20" rx="4" />
+        <circle cx="355" cy="579" r="3.5" stroke-width="1.3" />
 
-        <!-- Icon 3: Deploy Play -->
-        <rect x="414" y="569" width="20" height="20" rx="4" />
-        <polygon points="422,575 428,579 422,583" fill="#D6D3D1" stroke="none" />
+        <!-- Icon 3: CI/CD Deploy Play -->
+        <rect x="372" y="569" width="20" height="20" rx="4" />
+        <polygon points="380,575 386,579 380,583" fill="#D6D3D1" stroke="none" />
       </g>
 
-      <text x="448" y="586" fill="#F5F5F4" class="display-bold" font-size="24" letter-spacing="-0.5">thienper.dev</text>
+      <text x="406" y="586" fill="#F5F5F4" class="display-bold" font-size="22" letter-spacing="-0.4">Software Engineer</text>
     </g>
 
     <!-- Sphere C (Warm Gold Mini Orb right next to bottom capsule) -->
     <g class="sphere-c" filter="url(#pillShadow)">
-      <circle cx="650" cy="579" r="22" fill="url(#prismSphereC)" />
-      <circle cx="650" cy="579" r="22" fill="url(#sphereHighlight)" />
+      <circle cx="696" cy="579" r="22" fill="url(#prismSphereC)" />
+      <circle cx="696" cy="579" r="22" fill="url(#sphereHighlight)" />
     </g>
 
     <!-- Subtle Editorial Bottom Caption -->
-    <text x="600" y="654" fill="#78716C" class="mono-tag" font-size="11.5" letter-spacing="4" text-anchor="middle">
-      FULLSTACK ENGINEER  ·  FRONTEND  ·  BACKEND  ·  CI/CD AUTOMATION
+    <text x="600" y="654" fill="#8A847E" class="mono-tag" font-size="11.5" letter-spacing="3.5" text-anchor="middle">
+      WEB ARCHITECTURE  ·  MICROSERVICES  ·  REST API  ·  CI/CD AUTOMATION
     </text>
 
     <!-- Analog Film Grain Texture Overlay -->
